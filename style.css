@@ -5,7 +5,9 @@ img {
     padding-right: 1em;
 }
 
-
+body.loading {
+    overflow: hidden;
+  }
 
 body {
     margin: 0;
@@ -17,7 +19,6 @@ body {
     position: fixed;
     z-index: 1;
     width: 50%;
-    background-color: #f1f1f1;
     padding-left: 14em;
   }
   
@@ -42,3 +43,59 @@ body {
     margin: 50px auto 0 auto;
     width: 80%;
   }
+
+  .topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  float: right;
+}
+
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: black;
+  text-decoration: line-through;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  
+  color: white;
+}
+
+button {
+  background-color: black;
+  color: white;
+  position: relative;
+  height: 50px;
+  width: 150px;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

@@ -11,13 +11,35 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     </head>
     <body>
-    <img src="download.png" width="30em">
-        <div class="title">
-      <h1>LEVEL</h1>
-      <h1>UP</h1>
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="index.html" class="active">LEVEL <br> UP</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="form.html">Begin</a>
+      <a href="#about">About</a>
     </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="aFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <script>
+  function aFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }</script>
 
-    </form method="post" action="send-email.php">
+    <form method="post" action="send-email.php">
         <label for="name">Name</label>
         <input type="text" name="name" id ="name" required>
         

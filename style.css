@@ -1,9 +1,14 @@
 .loadingbar {
-    text-align: center;}
+    text-align: center;
+  }
 img {
     float: right;
     padding-right: 1em;
-}
+  }
+
+.content img{
+  width: 2em;
+  }
 
 body.loading {
     overflow: hidden;
@@ -16,10 +21,12 @@ body {
   }
   
   .header {
+    top: 0;
     position: fixed;
-    z-index: 1;
-    width: 50%;
-    padding-left: 14em;
+    z-index: 999;
+    width: 100%;
+    padding-left: none;
+    
   }
   
   .header h2 {
@@ -27,9 +34,10 @@ body {
   }
   
   .progress-container {
-    width: 100%;
+    width: 70%;
     height: 50px;
     background: #ccc;
+    margin: 0 auto;
     
   }
   
@@ -55,6 +63,7 @@ body {
   .topnav {
   overflow: hidden;
   position: relative;
+  z-index: 10000;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -120,7 +129,7 @@ h2 {
 
 @media only screen and (max-width: 600px) {
   .progress-container {
-    background-color: blue;
+    padding-left: none;
   }
 }
 

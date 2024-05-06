@@ -37,5 +37,5 @@ $mail->Body = $message;
 
 $mail->send();
 
-echo "email sent";  
+header("Location: sent.html");
 
